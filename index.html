@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battleship</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>BATTLESHIP</h1>
+      <div id="status"></div>
+      <div id="boards">
+        <section class="board-wrap">
+          <h2>กองเรือของคุณ</h2>
+          <div class="board-frame" id="playerHost"></div>
+        </section>
+        <section class="board-wrap">
+          <h2>น่านน้ำศัตรู</h2>
+          <div class="board-frame" id="enemyHost"></div>
+        </section>
+      </div>
+      <div id="controls">
+        <button id="autoBtn">สุ่มวางเรือให้ทั้งหมด</button>
+      </div>
+      <div id="fleets">
+        <div class="fleet" id="playerFleet"></div>
+        <div class="fleet" id="enemyFleet"></div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
